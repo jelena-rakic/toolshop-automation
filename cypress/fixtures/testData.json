@@ -1,0 +1,56 @@
+{
+  "users": {
+    "admin": {
+      "email": "admin@practicesoftwaretesting.com",
+      "password": "welcome01"
+    },
+    "customer": {
+      "email": "customer@practicesoftwaretesting.com",
+      "password": "welcome01"
+    },
+    "newUser": {
+      "firstName": "Test",
+      "lastName": "Automation",
+      "dob": "1990-01-15",
+      "address": "123 Automation Street",
+      "city": "Amsterdam",
+      "state": "Noord-Holland",
+      "country": "NL",
+      "postcode": "1011AB",
+      "phone": "+31612345678",
+      "email": "test.automation.toolshop@mailinator.com",
+      "password": "Test@1234!"
+    },
+    "wrongCredentials": {
+      "email": "customer@practicesoftwaretesting.com",
+      "password": "WrongPass99"
+    }
+  },
+  "products": {
+    "handTool": "Claw Hammer",
+    "powerTool": "Circular Saw",
+    "searchTerm": "Hammer",
+    "partialSearch": "ham",
+    "noResultSearch": "xyznonexistent999"
+  },
+  "filters": {
+    "category": "Hand Tools",
+    "powerCategory": "Power Tools",
+    "minPrice": "10",
+    "maxPrice": "50"
+  },
+  "payment": {
+    "creditCard": {
+      "number": "4111111111111111",
+      "expiryDate": "12/27",
+      "cvv": "123",
+      "name": "Test Automation"
+    },
+    "expiredCard": {
+      "number": "4111111111111111",
+      "expiryDate": "01/20",
+      "cvv": "123",
+      "name": "Test Automation"
+    }
+  }
+}

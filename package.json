@@ -1,0 +1,18 @@
+{
+  "name": "toolshop-automation",
+  "version": "1.0.0",
+  "description": "Cypress E2E automation and Postman/Newman API tests for Toolshop v5.0",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:user": "cypress run --spec 'cypress/e2e/01_user.cy.js'",
+    "cy:run:search": "cypress run --spec 'cypress/e2e/02_search.cy.js'",
+    "cy:run:cart": "cypress run --spec 'cypress/e2e/03_cart.cy.js'",
+    "cy:run:checkout": "cypress run --spec 'cypress/e2e/04_checkout.cy.js'",
+    "newman:run": "newman run postman/Toolshop_API.collection.json -e postman/Toolshop_API.environment.json",
+    "newman:run:html": "newman run postman/Toolshop_API.collection.json -e postman/Toolshop_API.environment.json --reporters cli,htmlextra --reporter-htmlextra-export reports/newman-report.html"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  }
+}
